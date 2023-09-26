@@ -1,0 +1,1 @@
+### To launch lab1 use `npm start` from lab1 directory
