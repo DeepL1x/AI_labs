@@ -1,0 +1,19 @@
+value,budget-lb,carry-ability,carry-type,psg-amount,big-cargo,efficiency,path-lb,physics,terrain-type
+"smart or mini or deo matiz",2000,false,,,,,,,
+city bike,0,false,,,,,0,,asphalt-road
+cross-country bike,0,false,,,,,0,,mixed-road
+MTB,0,false,,,,,0,,off-road
+gravel,0,false,,,,,15,true,mixed-road
+sportive/endurance,0,false,,,,,15,true,asphalt-road
+e-bike,0,false,,,,,15,false,mixed-road
+coupe-ICE,2000,true,passengers,1,,false,,,
+hatchback-ICE/sedan-ICE,2000,true,passengers,3,,false,,,
+van-ICE,6500,true,passengers cargo,8,,false,,,
+bus-ICE,6500,true,passengers,999,,false,,,
+panel-van,2000,true,passengers cargo,1,,false,,,
+coupe-EE,6500,true,passengers,1,,true,,,
+hatchback-EE/sedan-EE,6500,true,passengers,3,,true,,,
+van-EE,6500,true,passengers cargo,8,,true,,,
+pickup-ICE,2000,true,cargo,,false,false,,,
+pickup-EE,40000,true,cargo,,false,true,,,
+truck,2000,true,cargo,,true,,,,

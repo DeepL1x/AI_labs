@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lab2</title>
+  </head>
+  <body>
+    <input
+      type="file"
+      id="csvFileInput"
+      accept=".csv"
+      onchange="handleFileSelect(event)"
+    />
+    <button onclick="handleClear()">Clear selections</button>
+
+    <div id="question"></div>
+    <div style="display: flex">
+      <form id="myForm" onsubmit="handleSubmit(event)">
+        <div class="question">
+          <h3>Enter your budget</h3>
+          <input type="number" name="budget-lb" required />
+        </div>
+        <div class="question">
+          <h3>Do you need to carry somebody or something?</h3>
+          <label
+            ><input type="radio" name="carry-ability" value="true" /> yes</label
+          >
+          <label
+            ><input type="radio" name="carry-ability" value="false" /> no</label
+          >
+        </div>
+        <div class="question">
+          <h3>How long is your daily travel path? (in km)</h3>
+          <input type="number" name="path-lb" />
+        </div>
+        <div class="question">
+          <h3>What's with your physical health?</h3>
+          <label
+            ><input type="radio" name="physics" value="true" /> good or decent
+            or want to improve</label
+          >
+          <label
+            ><input type="radio" name="physics" value="false" /> bad or don't
+            want to improve</label
+          >
+        </div>
+        <div class="question">
+          <h3>What's the type of road you ride</h3>
+          <label
+            ><input type="radio" name="terrain-type" value="mixed-road" />
+            mixed-road</label
+          >
+          <label
+            ><input type="radio" name="terrain-type" value="off-road" />
+            off-road</label
+          >
+          <label
+            ><input type="radio" name="terrain-type" value="asphalt-road" />
+            asphalt-road</label
+          >
+        </div>
+        <div class="question">
+          <h3>What do you need to carry?</h3>
+          <label
+            ><input type="radio" name="carry-type" value="passengers" />
+            passengers</label
+          >
+          <label
+            ><input type="radio" name="carry-type" value="passengers cargo" />
+            passengers and cargo</label
+          >
+          <label
+            ><input type="radio" name="carry-type" value="cargo" /> cargo</label
+          >
+        </div>
+        <div class="question">
+          <h3>How many passengers</h3>
+          <input type="number" name="psg-amount" />
+        </div>
+        <div class="question">
+          <h3>Is your cargo big (takes lots of space)?</h3>
+          <label
+            ><input type="radio" name="big-cargo" value="true" /> yes</label
+          >
+          <label
+            ><input type="radio" name="big-cargo" value="false" /> no</label
+          >
+        </div>
+        <div class="question">
+          <h3>Do you care about environment and efficiency on the road?</h3>
+          <label
+            ><input type="radio" name="efficiency" value="true" /> yes</label
+          >
+          <label
+            ><input type="radio" name="efficiency" value="false" /> no</label
+          >
+        </div>
+        <input type="submit" value="submit" />
+      </form>
+      <div>
+        <div id="results">Results:<br /></div>
+      </div>
+    </div>
+    <script src="decisions.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
