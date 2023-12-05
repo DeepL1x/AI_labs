@@ -1,0 +1,9 @@
+.matrix {
+    display: grid;
+    margin: 10px;
+}
+.matrix-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
